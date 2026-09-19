@@ -4,7 +4,7 @@
 hl.config({
     general = {
         gaps_in          = 2,
-        gaps_out         = 4,
+        gaps_out         = 2,
         border_size      = 2,
         col              = {
             active_border   = { colors = { "rgba(33ccffee)", "rgba(00ff99ee)" }, angle = 45 },
@@ -39,9 +39,9 @@ hl.config({
             contrast                  = 0.89,
             vibrancy                  = 0.5,
             vibrancy_darkness         = 0.5,
-            popups                    = false, 
-            popups_ignorealpha        = 0.6,  
-            input_methods             = true, 
+            popups                    = false,
+            popups_ignorealpha        = 0.6,
+            input_methods             = true,
             input_methods_ignorealpha = 0.8
         },
     },

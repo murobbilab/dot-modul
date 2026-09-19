@@ -16,15 +16,16 @@ return {
       direction = "float", -- Pilihan: "float", "horizontal", "vertical", "tab"
       close_on_exit = true,
       shell = vim.o.shell,
-      dir = "%:p:h", -- Otomatis mengarahkan ke folder tempat file aktif berada
       float_opts = {
         border = "curved", -- Bingkai melayang lengkung
       },
     },
     keys = {
-      { "<leader>tf", "<cmd>ToggleTerm direction=float dir=%:p:h<cr>", desc = "Terminal Floating (Current File Dir)" },
-      { "<leader>th", "<cmd>ToggleTerm size=10 direction=horizontal dir=%:p:h<cr>", desc = "Terminal Horizontal (Current File Dir)" },
+			--{ "<leader>tf", "<cmd>ToggleTerm direction=float<cr>", desc = "Terminal Floating" },
+      { "<leader>t", "<cmd>ToggleTerm size=10 direction=horizontal<cr>", desc = "Terminal Horizontal" },
     },
   },
 }
+
+
 
