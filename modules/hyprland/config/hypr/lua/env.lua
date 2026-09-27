@@ -15,7 +15,7 @@ hl.env("NVD_BACKEND", "direct")
 hl.env("GBM_BACKEND", "nvidia-drm")
 
 -- performance
-hl.env("__GL_GSYNC_ALLOWED", "0")
-hl.env("__GL_VRR_ALLOWED", "0")
+hl.env("__GL_GSYNC_ALLOWED", "1")
+hl.env("__GL_VRR_ALLOWED", "1")
 
 

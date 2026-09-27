@@ -7,12 +7,12 @@
 
 -- Example window rules that are useful
 
--- local suppressMaximizeRule = hl.window_rule({
---     name           = "suppress-maximize-events",
---     match          = { class = ".*" },
+local suppressMaximizeRule = hl.window_rule({
+    name           = "suppress-maximize-events",
+    match          = { class = "^((?!(steam_app_|steam)).)*$"},
 
---     suppress_event = "maximize",
--- })
+    suppress_event = "maximize",
+})
 
 hl.window_rule({
     name     = "fix-xwayland-drags",
@@ -35,3 +35,17 @@ hl.window_rule({
     move  = "20 monitor_h-120",
     float = true,
 })
+
+hl.window_rule({
+  	match = { class = "^(steam_app_.*)" },
+  	immediate = true,
+  	no_anim = true,
+  	no_shadow = true
+})
+
+hl.window_rule({
+    match = { class = "^(kitty)$" },
+    maximize = true
+})
+
+
